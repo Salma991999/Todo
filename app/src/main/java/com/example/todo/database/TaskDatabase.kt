@@ -10,7 +10,7 @@ import com.example.todo.database.model.Task
 @Database (entities = [Task::class], version =1 )
 abstract class TaskDatabase : RoomDatabase() {
 
-    abstract fun TaskDao() : TaskDao
+    abstract fun taskDao() : TaskDao
 
     companion object{
        private var database :TaskDatabase? = null
